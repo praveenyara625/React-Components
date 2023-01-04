@@ -1,0 +1,74 @@
+.custom_button {
+  border: none;
+  border-radius: 8%;
+  color: white;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 10px 14px 10px 14px;
+  box-shadow: 2px 2px 6px grey;
+  transition: 0.25s;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom_button:after {
+  content: "";
+  background: lightgray;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.custom_button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.blue {
+  background-color: #4885ed;
+}
+.green {
+  background-color: #3cba54;
+}
+.red {
+  background-color: #db3236;
+}
+
+.small {
+  padding: 5px 10px 5px 10px;
+}
+.medium {
+  padding: 10px 20px 10px 20px;
+}
+.large {
+  padding: 20px 30px 20px 30px;
+}
+.xlarge {
+  padding: 30px 40px 30px 40px;
+}
+/* Button Effects */
+.custom_button.blue:hover,
+.custom_button.green:hover,
+.custom_button.red:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px grey;
+  transform: scale(0.9);
+}
+
+.custom_button.blue:hover {
+  background-color: #2363d2;
+}
+.custom_button.green:hover {
+  background-color: #298039;
+}
+.custom_button.red:hover {
+  background-color: #9e2427;
+}
